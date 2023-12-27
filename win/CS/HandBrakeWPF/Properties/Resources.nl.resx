@@ -1450,6 +1450,9 @@ VLC en MPC-HC worden ondersteund. Andere mediaspelers werken mogelijk ook, maar 
   <data name="QueueView_ResetAllJobs" xml:space="preserve">
     <value>Alle taken opnieuw uitvoeren</value>
   </data>
+  <data name="QueueView_StaggerJobs" xml:space="preserve">
+    <value>Alle taken spreiden</value>
+  </data>
   <data name="QueueView_ResetFailed" xml:space="preserve">
     <value>Herhaalde uitvoering mislukt</value>
   </data>

@@ -2809,4 +2809,7 @@ To allow multiple simultaneous encodes, turn on "Process Isolation" in Tools Men
   <data name="AudioView_QualityMode" xml:space="preserve">
     <value>Audio Encoder Quality Mode</value>
   </data>
+  <data name="QueueView_StaggerJobs" xml:space="preserve">
+    <value>Stagger all jobs</value>
+  </data>
 </root>

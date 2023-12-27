@@ -171,6 +171,7 @@
                             <MenuItem Command="{Binding RelayCommand}" CommandParameter="ResetFailed" Header="{x:Static Properties:Resources.QueueView_ResetFailed}" />
                             <MenuItem Command="{Binding RelayCommand}" CommandParameter="ResetSelectedJobs" Header="{x:Static Properties:Resources.QueueView_ResetSelectedJobs}" />
                             <MenuItem Command="{Binding RelayCommand}" CommandParameter="ResetAllJobs" Header="{x:Static Properties:Resources.QueueView_ResetAllJobs}" />
+                            <MenuItem Command="{Binding RelayCommand}" CommandParameter="StaggerJobs" Header="{x:Static Properties:Resources.QueueView_StaggerJobs}" />
                             <Separator />
                             <MenuItem Command="{Binding RelayCommand}" CommandParameter="ClearCompleted" Header="{x:Static Properties:Resources.QueueView_ClearCompleted}" />
                             <MenuItem Command="{Binding RelayCommand}" CommandParameter="Clear" Header="{x:Static Properties:Resources.QueueView_ClearAll}" />

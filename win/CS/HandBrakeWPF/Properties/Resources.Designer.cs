@@ -6036,6 +6036,15 @@ namespace HandBrakeWPF.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Stagger all jobs.
+        /// </summary>
+        public static string QueueView_StaggerJobs {
+            get {
+                return ResourceManager.GetString("QueueView_StaggerJobs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Start Queue.
         /// </summary>
         public static string QueueView_Start {

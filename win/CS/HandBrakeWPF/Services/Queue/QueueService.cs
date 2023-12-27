@@ -424,6 +424,29 @@ namespace HandBrakeWPF.Services.Queue
             
             this.InvokeQueueChanged(EventArgs.Empty);
         }
+        public void Stagger()
+        {
+            lock (QueueLock)
+            {
+                var total = this.queue.Count;
+                var grouped = this.queue.OrderByDescending(x => x.Task.ChapterNames.Count)
+                                        .GroupBy(x => x.ScannedSourcePath[0])
+                                        .Select(g => g.ToList())
+                                        .ToList();
+                this.queue.Clear();
+                for (int i = 0; this.queue.Count < total; i++)
+                {
+                    var group = grouped[i % grouped.Count];
+                    if (group.Any())
+                    {
+                        this.queue.Add(group.First());
+                        group.RemoveAt(0);
+                    }
+                }
+            }
+
+            this.InvokeQueueChanged(EventArgs.Empty);
+        }
 
         public void Remove(QueueTask job)
         {
