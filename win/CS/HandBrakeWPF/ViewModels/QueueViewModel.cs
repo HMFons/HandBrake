@@ -527,7 +527,12 @@ namespace HandBrakeWPF.ViewModels
                 }
             }
         }
-        
+
+        public void StaggerJobs()
+        {
+            this.queueProcessor.Stagger();           
+        }
+
         public void ResetFailed()
         {
             foreach (var task in this.QueueTasks)

@@ -167,6 +167,11 @@ namespace HandBrakeWPF.Services.Queue.Interfaces
         void MoveToTop(IList<QueueTask> moveItems);
 
         /// <summary>
+        /// Stagger items in the queue list based on length and source
+        /// </summary>
+        void Stagger();
+
+        /// <summary>
         /// Remove a job from the Queue.
         /// This method is Thread Safe
         /// </summary>
